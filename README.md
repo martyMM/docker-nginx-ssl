@@ -8,7 +8,7 @@ To run it:
 
     $ docker run -d -p 80:80 -p 443:443 -v /var/run/docker.sock:/tmp/docker.sock -v /path/to/nginx/certificates:/etc/nginx/certificates -t jwilder/nginx-proxy
 
-    docker run -d -p 80:80 -p 443:443 -v /var/run/docker.sock:/tmp/docker.sock -v /home/deploy/ssl:/etc/nginx/certificates -t jwilder/nginx-proxy
+    docker run -d -p 80:80 -p 443:443 -v /var/run/docker.sock:/tmp/docker.sock -v /home/deploy/ssl:/etc/nginx/certificates -t marcelmedia/nginx-proxy:1.0
 
 Then start any containers you want proxied with an env var VIRTUAL_HOST=subdomain.youdomain.com
 
